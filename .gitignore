@@ -1,0 +1,52 @@
+*.class
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+.gradle
+
+*.lck
+*.1
+*.2
+*.log
+.mine*
+/externalgames
+NVIDIA
+
+# gradle build
+/build/
+/HMCL/build/
+/HMCLCore/build/
+/minecraft/libraries/HMCLTransformerDiscoveryService/build/
+/minecraft/libraries/log4j-patch/build/
+
+# idea
+.idea
+/out/
+/HMCL/out/
+/HMCLCore/out/
+/minecraft/libraries/HMCLTransformerDiscoveryService/out/
+/minecraft/libraries/log4j-patch/out/
+
+# eclipse
+/bin/
+/HMCL/bin/
+/HMCLCore/bin/
+/minecraft/libraries/HMCLTransformerDiscoveryService/bin/
+/minecraft/libraries/log4j-patch/bin/
+.classpath
+.project
+.settings
+
+# netbeans
+.nb-gradle
+
+*.exe
+!/HMCL/src/main/resources/assets/HMCLauncher.exe
+
+# macos
+.DS_Store
+
+# test
+/hmcl.json
+/.hmcl.json
