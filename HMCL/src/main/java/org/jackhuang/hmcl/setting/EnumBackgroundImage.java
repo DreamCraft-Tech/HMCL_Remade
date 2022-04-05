@@ -20,6 +20,10 @@ package org.jackhuang.hmcl.setting;
 public enum EnumBackgroundImage {
     DEFAULT,
     CUSTOM,
+    CASTLE,
+    NIGHT,
+    STATION,
+    TRAIN,
     CLASSIC,
     NETWORK,
     TRANSLUCENT

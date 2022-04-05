@@ -125,16 +125,23 @@
 }
 
 .announcement {
-    -fx-padding: 16;
+    -fx-padding: 8;
 }
 
 .announcement .title {
     -fx-font-size: 14px;
     -fx-font-weight: BOLD;
+    -fx-text-fill: rgb(255, 255, 255);
 }
 
-.announcement JFXHyperlink, .announcement Text {
-    -fx-font-size: 13px;
+.announcement JFXHyperlink,{
+    -fx-font-size: 12px;
+}
+
+
+.announcement Text {
+    -fx-font-size: 12px;
+    -fx-fill: rgb(255, 255, 255);
 }
 
 .rippler-container {
@@ -846,18 +853,18 @@
 }
 
 .card {
-    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-background-color: rgba(255, 255, 255, 0.4);
     -fx-background-radius: 4;
     -fx-padding: 8px;
-
-    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.26), 10, 0.12, -1, 2);
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.12, -1, 2);
 }
 
 .card-non-transparent {
     -fx-background-color: white;
     -fx-background-radius: 4;
     -fx-padding: 8px;
-
+    -fx-text-fill: #ffffff;
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.26), 10, 0.12, -1, 2);
 }
 

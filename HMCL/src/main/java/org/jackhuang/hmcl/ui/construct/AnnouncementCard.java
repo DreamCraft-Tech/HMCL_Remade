@@ -24,10 +24,9 @@ import org.jackhuang.hmcl.ui.Controllers;
 import org.jackhuang.hmcl.ui.FXUtils;
 
 public class AnnouncementCard extends VBox {
-
     public AnnouncementCard(String title, String content) {
-        TextFlow tf = FXUtils.segmentToTextFlow(content, Controllers::onHyperlinkAction);
 
+        TextFlow tf = FXUtils.segmentToTextFlow(content, Controllers::onHyperlinkAction);
         Label label = new Label(title);
         label.getStyleClass().add("title");
         getChildren().setAll(label, tf);

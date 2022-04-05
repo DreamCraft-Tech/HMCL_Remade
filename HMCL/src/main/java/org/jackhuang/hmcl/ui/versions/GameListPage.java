@@ -87,16 +87,6 @@ public class GameListPage extends DecoratorAnimatedPage implements DecoratorPage
             }
 
             AdvancedListBox bottomLeftCornerList = new AdvancedListBox()
-                    .addNavigationDrawerItem(installNewGameItem -> {
-                        installNewGameItem.setTitle(i18n("install.new_game"));
-                        installNewGameItem.setLeftGraphic(VersionPage.wrap(SVG::plusCircleOutline));
-                        installNewGameItem.setOnAction(e -> Versions.addNewGame());
-                    })
-                    .addNavigationDrawerItem(installModpackItem -> {
-                        installModpackItem.setTitle(i18n("install.modpack"));
-                        installModpackItem.setLeftGraphic(VersionPage.wrap(SVG::pack));
-                        installModpackItem.setOnAction(e -> Versions.importModpack());
-                    })
                     .addNavigationDrawerItem(refreshItem -> {
                         refreshItem.setTitle(i18n("button.refresh"));
                         refreshItem.setLeftGraphic(VersionPage.wrap(SVG::refresh));
@@ -144,8 +134,6 @@ public class GameListPage extends DecoratorAnimatedPage implements DecoratorPage
             super();
 
             Profiles.registerVersionsListener(this::loadVersions);
-
-            setOnFailedAction(e -> Controllers.navigate(Controllers.getDownloadPage()));
         }
 
         private void loadVersions(Profile profile) {
@@ -165,7 +153,7 @@ public class GameListPage extends DecoratorAnimatedPage implements DecoratorPage
                     children.forEach(GameListItem::checkSelection);
 
                     if (children.isEmpty()) {
-                        setFailedReason(i18n("version.empty.hint"));
+                        setFailedReason(i18n("dreamcraft.version.empty.hint"));
                     }
 
                     profile.selectedVersionProperty().addListener(listenerHolder.weak((a, b, newValue) -> {

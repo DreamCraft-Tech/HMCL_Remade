@@ -9,7 +9,7 @@ sourceSets.create("agent") {
 }
 
 dependencies {
-    compileOnly("org.apache.logging.log4j:log4j-core:2.17.1")
+    compileOnly("org.apache.logging.log4j:log4j-core:2.0-beta9")
 }
 
 tasks.withType<JavaCompile> {

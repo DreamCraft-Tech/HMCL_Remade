@@ -150,6 +150,14 @@ public class DecoratorController {
                                 }
                             } else if (config().getBackgroundImageType() == EnumBackgroundImage.CLASSIC) {
                                 image = newImage("/assets/img/background-classic.jpg");
+                            } else if (config().getBackgroundImageType() == EnumBackgroundImage.CASTLE) {
+                                image = newImage("/assets/img/background-castle.jpg");
+                            } else if (config().getBackgroundImageType() == EnumBackgroundImage.NIGHT) {
+                                image = newImage("/assets/img/background-night.jpg");
+                            } else if (config().getBackgroundImageType() == EnumBackgroundImage.STATION) {
+                                image = newImage("/assets/img/background-station.jpg");
+                            } else if (config().getBackgroundImageType() == EnumBackgroundImage.TRAIN) {
+                                image = newImage("/assets/img/background-train.jpg");
                             } else if (config().getBackgroundImageType() == EnumBackgroundImage.TRANSLUCENT) {
                                 return new Background(new BackgroundFill(new Color(1, 1, 1, 0.5), CornerRadii.EMPTY, Insets.EMPTY));
                             }

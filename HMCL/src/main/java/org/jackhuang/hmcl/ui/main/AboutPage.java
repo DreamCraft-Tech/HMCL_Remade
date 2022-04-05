@@ -36,92 +36,11 @@ public class AboutPage extends StackPane {
         {
             IconedTwoLineListItem launcher = new IconedTwoLineListItem();
             launcher.setImage(new Image("/assets/img/craft_table.png", 32, 32, false, true));
-            launcher.setTitle("Hello Minecraft! Launcher");
-            launcher.setSubtitle(Metadata.VERSION);
-            launcher.setExternalLink("https://hmcl.huangyuhui.net");
+            launcher.setTitle("Dreamcraft Railway Server Cilent");
+            launcher.setSubtitle("V2.0.0 BuildDate:2022-04-04");
+            launcher.setExternalLink("https://www.dreamcraft.com.cn");
 
-            IconedTwoLineListItem author = new IconedTwoLineListItem();
-            author.setImage(new Image("/assets/img/yellow_fish.jpg", 32, 32, false, true));
-            author.setTitle("huanghongxun");
-            author.setSubtitle(i18n("about.author.statement"));
-            author.setExternalLink("https://space.bilibili.com/1445341");
-
-            about.getContent().setAll(launcher, author);
-        }
-
-        ComponentList thanks = new ComponentList();
-        {
-            IconedTwoLineListItem yushijinhun = new IconedTwoLineListItem();
-            yushijinhun.setImage(new Image("/assets/img/yushijinhun.jpg", 32, 32, false, true));
-            yushijinhun.setTitle("yushijinhun");
-            yushijinhun.setSubtitle(i18n("about.thanks_to.yushijinhun.statement"));
-            yushijinhun.setExternalLink("https://yushi.moe/");
-
-            IconedTwoLineListItem bangbang93 = new IconedTwoLineListItem();
-            bangbang93.setImage(new Image("/assets/img/bangbang93.jpg", 32, 32, false, true));
-            bangbang93.setTitle("bangbang93");
-            bangbang93.setSubtitle(i18n("about.thanks_to.bangbang93.statement"));
-            bangbang93.setExternalLink("https://bmclapi2.bangbang93.com/");
-
-            IconedTwoLineListItem gamerteam = new IconedTwoLineListItem();
-            gamerteam.setTitle("gamerteam");
-            gamerteam.setImage(new Image("/assets/img/gamerteam.jpg", 32, 32, false, true));
-            gamerteam.setSubtitle(i18n("about.thanks_to.gamerteam.statement"));
-            gamerteam.setExternalLink("http://www.zhaisoul.com/");
-
-            IconedTwoLineListItem redLnn = new IconedTwoLineListItem();
-            redLnn.setTitle("Red_lnn");
-            redLnn.setImage(new Image("/assets/img/red_lnn.jpg", 32, 32, false, true));
-            redLnn.setSubtitle(i18n("about.thanks_to.red_lnn.statement"));
-
-            IconedTwoLineListItem mcbbs = new IconedTwoLineListItem();
-            mcbbs.setImage(new Image("/assets/img/chest.png", 32, 32, false, true));
-            mcbbs.setTitle(i18n("about.thanks_to.mcbbs"));
-            mcbbs.setSubtitle(i18n("about.thanks_to.mcbbs.statement"));
-            mcbbs.setExternalLink("https://www.mcbbs.net/");
-
-            IconedTwoLineListItem mcmod = new IconedTwoLineListItem();
-            mcmod.setImage(new Image("/assets/img/mcmod.png", 32, 32, false, true));
-            mcmod.setTitle(i18n("about.thanks_to.mcmod"));
-            mcmod.setSubtitle(i18n("about.thanks_to.mcmod.statement"));
-            mcmod.setExternalLink("https://www.mcmod.cn/");
-
-            IconedTwoLineListItem noin = new IconedTwoLineListItem();
-            noin.setImage(new Image("/assets/img/noin.png", 32, 32, false, true));
-            noin.setTitle(i18n("about.thanks_to.noin"));
-            noin.setSubtitle(i18n("about.thanks_to.noin.statement"));
-            noin.setExternalLink("https://s.mcer.cn/");
-
-            IconedTwoLineListItem contributors = new IconedTwoLineListItem();
-            contributors.setImage(new Image("/assets/img/github.png", 32, 32, false, true));
-            contributors.setTitle(i18n("about.thanks_to.contributors"));
-            contributors.setSubtitle(i18n("about.thanks_to.contributors.statement"));
-            contributors.setExternalLink("https://github.com/huanghongxun/HMCL/graphs/contributors");
-
-            thanks.getContent().setAll(yushijinhun, bangbang93, mcbbs, mcmod, noin, gamerteam, redLnn, contributors);
-        }
-
-        ComponentList community = new ComponentList();
-        {
-            IconedTwoLineListItem users = new IconedTwoLineListItem();
-            users.setImage(new Image("/assets/img/craft_table.png", 32, 32, false, true));
-            users.setTitle(i18n("about.thanks_to.users"));
-            users.setSubtitle(i18n("about.thanks_to.users.statement"));
-            users.setExternalLink("https://hmcl.huangyuhui.net/api/redirect/sponsor");
-
-            IconedTwoLineListItem discord = new IconedTwoLineListItem();
-            discord.setImage(new Image("/assets/img/discord.png", 32, 32, false, true));
-            discord.setTitle(i18n("about.community.discord"));
-            discord.setSubtitle(i18n("about.community.discord.statement"));
-            discord.setExternalLink("https://discord.gg/jVvC7HfM6U");
-
-            IconedTwoLineListItem kaiheila = new IconedTwoLineListItem();
-            kaiheila.setImage(new Image("/assets/img/kaiheila.jpeg", 32, 32, false, true));
-            kaiheila.setTitle(i18n("about.community.kaiheila"));
-            kaiheila.setSubtitle(i18n("about.community.kaiheila.statement"));
-            kaiheila.setExternalLink("https://kaihei.co/Kx7n3t");
-
-            community.getContent().setAll(users, discord, kaiheila);
+            about.getContent().setAll(launcher);
         }
 
         ComponentList dep = new ComponentList();
@@ -176,15 +95,19 @@ public class AboutPage extends StackPane {
 
         ComponentList legal = new ComponentList();
         {
-            IconedTwoLineListItem copyright = new IconedTwoLineListItem();
-            copyright.setTitle(i18n("about.copyright"));
-            copyright.setSubtitle(i18n("about.copyright.statement"));
-            copyright.setExternalLink("https://hmcl.huangyuhui.net/about/");
+            IconedTwoLineListItem dreamcraft = new IconedTwoLineListItem();
+            dreamcraft.setTitle(i18n("dreamcraft.cilent.maker"));
+            dreamcraft.setSubtitle(i18n("dreamcraft.cilent.maker.name"));
 
             IconedTwoLineListItem claim = new IconedTwoLineListItem();
-            claim.setTitle(i18n("about.claim"));
-            claim.setSubtitle(i18n("about.claim.statement"));
-            claim.setExternalLink(Metadata.EULA_URL);
+            claim.setTitle(i18n("dreamcraft.about.claim"));
+            claim.setSubtitle(i18n("dreamcraft.about.claim.statement"));
+            claim.setExternalLink("https://www.dreamcraft.com.cn/eula");
+
+            IconedTwoLineListItem copyright = new IconedTwoLineListItem();
+            copyright.setTitle(i18n("dreamcraft.about.copyright"));
+            copyright.setSubtitle(i18n("dreamcraft.about.copyright.statement"));
+            copyright.setExternalLink("https://hmcl.huangyuhui.net/about/");
 
             IconedTwoLineListItem openSource = new IconedTwoLineListItem();
             openSource.setTitle(i18n("about.open_source"));
@@ -199,12 +122,6 @@ public class AboutPage extends StackPane {
         content.getChildren().setAll(
                 ComponentList.createComponentListTitle(i18n("about")),
                 about,
-
-                ComponentList.createComponentListTitle(i18n("about.thanks_to")),
-                thanks,
-
-                ComponentList.createComponentListTitle(i18n("about.community")),
-                community,
 
                 ComponentList.createComponentListTitle(i18n("about.dependency")),
                 dep,
