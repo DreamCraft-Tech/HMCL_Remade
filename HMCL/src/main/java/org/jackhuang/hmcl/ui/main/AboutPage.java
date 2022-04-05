@@ -36,11 +36,25 @@ public class AboutPage extends StackPane {
         {
             IconedTwoLineListItem launcher = new IconedTwoLineListItem();
             launcher.setImage(new Image("/assets/img/craft_table.png", 32, 32, false, true));
-            launcher.setTitle("Dreamcraft Railway Server Cilent");
-            launcher.setSubtitle("V2.0.0 BuildDate:2022-04-04");
+            launcher.setTitle(i18n("dreamcraft.about.Title.launcher"));
+            launcher.setSubtitle(i18n("dreamcraft.about.subtitle.launcher"));
             launcher.setExternalLink("https://www.dreamcraft.com.cn");
 
-            about.getContent().setAll(launcher);
+            IconedTwoLineListItem Skin = new IconedTwoLineListItem();
+            Skin.setImage(new Image("/assets/img/skin.png", 32, 32, false, true));
+            Skin.setTitle(i18n("dreamcraft.about.Title.skin"));
+            Skin.setSubtitle(i18n("dreamcraft.about.subtitle.skin"));
+            Skin.setExternalLink("https://skin.dreamcraft.com.cn/");
+
+            IconedTwoLineListItem MTR = new IconedTwoLineListItem();
+            MTR.setImage(new Image("/assets/img/MTR.png", 32, 32, false, true));
+            MTR.setTitle(i18n("dreamcraft.about.Title.MTR"));
+            MTR.setSubtitle(i18n("dreamcraft.about.subtitle.MTR"));
+            MTR.setExternalLink("https://github.com/jonafanho/Minecraft-Transit-Railway");
+
+
+
+            about.getContent().setAll(launcher,Skin,MTR);
         }
 
         ComponentList dep = new ComponentList();
